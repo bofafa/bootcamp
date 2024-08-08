@@ -30,81 +30,80 @@ public class JavaQuest3 {
     System.out.print("Input a month number: ");
     int month = input.nextInt();
 
-    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-      number_Of_DaysInMonth = 31;
-    } else if (month == 4 || month == 6 || month == 9 || month == 11) {
-      number_Of_DaysInMonth = 30;
-    } else if (month == 2) {
-      if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-        number_Of_DaysInMonth = 29;
-      } else {
-        number_Of_DaysInMonth = 28;
-      }
-    } else {
-      System.out.println("Invalid input");
-      return;
-    }
-
-
-
     // Complete the switch statement
+     // The February has 29 days: (Every 4 years and the year cannot divded by 100)
+        // or The year can divided by 400
+        // otherwise the February should have 28 days only
+        // how about other months, December?
+        
     switch (month) {
       case 1:
         monthOfName = "January";
-        System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
+        number_Of_DaysInMonth = 31;
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
         break;
       case 2:
-        monthOfName = "February";
-        System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
+      monthOfName = "February";
+      if (year % 4 ==0 && year % 100 != 0 || year % 400 == 0) {
+        number_Of_DaysInMonth = 29;
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );
+      } else {
+        number_Of_DaysInMonth = 29;
+        System.out.println(monthOfName + " " + year + " " + "has " + number_Of_DaysInMonth + " days" );}
         break;
       case 3:
         monthOfName = "March";
+        number_Of_DaysInMonth = 31;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 4:
         monthOfName = "April";
+        number_Of_DaysInMonth = 30;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 5:
         monthOfName = "May";
+        number_Of_DaysInMonth = 31;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 6:
         monthOfName = "June";
+        number_Of_DaysInMonth = 30;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 7:
         monthOfName = "July";
+        number_Of_DaysInMonth = 31;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 8:
         monthOfName = "August";
+        number_Of_DaysInMonth = 31;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 9:
         monthOfName = "September";
+        number_Of_DaysInMonth = 30;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 10:
         monthOfName = "October";
+        number_Of_DaysInMonth = 31;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 11:
         monthOfName = "November";
+        number_Of_DaysInMonth = 30;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       case 12:
         monthOfName = "December";
+        number_Of_DaysInMonth = 31;
         System.out.println(monthOfName + year + " has " + number_Of_DaysInMonth + " days");
         break;
       default:
         System.out.println("Invalid input");
         break;
-        // The February has 29 days: (Every 4 years and the year cannot divded by 100)
-        // or The year can divided by 400
-        // otherwise the February should have 28 days only
-        // how about other months, December?
-    }
-    // 
+      }
   }
 }
