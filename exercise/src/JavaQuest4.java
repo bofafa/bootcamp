@@ -13,14 +13,29 @@ public class JavaQuest4 {
     // 1. Even numbers
     // 2. Divisible by 3
     // 3. > 0
-    int count =0;
-    for (int i = 0; i < 100; i++) { // You cannot change this line
-      if (i % 2 == 0 && i % 3 == 0 && i > 0) {
-        System.out.print("   " + i + "   ");
-        count++;
-        if (count == 10)
-        break;
-      }
+
+    int count2 = 0;
+     for ( int i =0 ; i < 61 ; i++){
+      if( i % 2 == 0 && i % 3 == 0 && i >0){
+      System.out.println("" + i +  " ");
+      count2++;
+      if (count2  == 10)
+      break;
+     }
     }
   }
 }
+
+
+
+    //int count =0;
+   // for (int i = 0; i < 100; i++) { // You cannot change this line
+    //  if (i % 2 == 0 && i % 3 == 0 && i > 0) {
+    //    System.out.print("   " + i + "   ");
+    //    count++;
+   //     if (count == 10)
+   //     break;
+      
+    
+  
+

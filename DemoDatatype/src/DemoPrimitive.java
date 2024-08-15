@@ -11,7 +11,7 @@ public class DemoPrimitive {
    // Re-assigment
    y = 9;
    System.out.println(y); // 9
-   System.out.println(x);
+   System.out.println(x); // 100
    System.out.println(20);
    System.out.println(x); 
 
@@ -59,22 +59,22 @@ public class DemoPrimitive {
     // int value -> byte value (implicitly)
 
     int i2 = 3;
-    byte b2 = i2; // java doesnt not akkw higher level type to lower level type
+    //byte b2 = i2; // java doesnt not akkw higher level type to lower level type
 
     //assign byte varuable to int variable
 int i3 = b1; //ok
 b1 = -128;
-b1 = 129; // out of range
+//b1 = 129; // out of range
 b1 = 127;
-b1 = 128; // out of range
+//b1 = 128; // out of range
 
     short s1 = 3; //-32768 to 32767
     //short vs int
     int i4 = s1;
     s1 = -32768;
-    s1 = 32769;
+    //s1 = 32799;
     s1= 32767;
-    s1= 32768;
+    //s1= 32768;
     // s1 = i3;// i3 ism higher level type
 
 
@@ -99,6 +99,18 @@ b1 = 128; // out of range
     int age2 =66;
     boolean isElderly = age2 > 65; // event definition
     System.out.println(isElderly); // true
+
+    int age3 = 65;
+    boolean isolder = age> 18;
+    System.out.println( isolder);
+
+    String str = "---------";
+    System.out.println("---------");
+
+    int  motherAge = 35;
+    boolean motherAgeOlder = motherAge < 34;
+  System.out.println (motherAgeOlder) ;
+
 
     int k = 0;
     int o = k++ +3;

@@ -27,10 +27,17 @@ public class DemoString {
     String message = "i'm" + age + "years old.";
     System.out.println(message);
 
+    //---sele test---//
+    int age5 = 18;
+    String note = "he is "+  age5 +  " years old.";
+    System.out.println(note);
+
     //Example 2
     char grade = 'A'; 
     System.out.println("My grade of Histiory is " + grade);
     // String +char = Strin
+
+    System.out.println("---------------");
     
     //+=
     String firstName = "Vincent";
@@ -41,6 +48,15 @@ public class DemoString {
     //fullName = fullName + firstName + " " + lastName;
     System.out.println(fullName);
 
+    //---------self test--------------
+    String firstName2 = "bo";
+    String lastname2 = "hui";
+    String fullname2 =" "; 
+    fullname2 += firstName2 + " "+ lastname2;
+    System.out.println(fullname2);
+
+    System.out.println("---------------");
+
     // Primitive -> Math Operation, Comparsion (>,<,>=,<=,==,!=)
     //String -> not Primitiv, we use method (tool) to compare their values
     String s10 = "hello";
@@ -50,6 +66,15 @@ public class DemoString {
     System.out.println(s10.equals (s20));// true
 
     boolean isvalueSame = "abc".equals(s20); //false
+    System.out.println(isvalueSame);
+
+    //-------self test-----------
+    String isvalueSame2 = "hello";
+    boolean isvaluesame2 ="hello".equals(s10);
+    System.out.println(isvalueSame2);
+
+    System.out.println("---------------");
+
 
     // charAt()
     char result = s10.charAt(1); //2nd char of String value

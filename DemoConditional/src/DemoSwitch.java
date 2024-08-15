@@ -32,12 +32,13 @@ public class DemoSwitch {
     System.out.println("isAdult=" + isAdult);
 
     //Example
+    //switch -> case -> break -> last one is default
     
-    String day = "Tuesday";
+    String day = "sunday";
     switch (day) {
       case "Monday":
         System.out.println("it is weekday");
-        // break;
+        // break; <---- 要加BREAK 搵到VALUE後先會停止 ，如果唔加BREAK會KEEP住 俾埋後面VALUE 
       case "Tuesday":
         System.out.println("it is weekday"); // print
         // break;
@@ -46,17 +47,41 @@ public class DemoSwitch {
         // break;
       case "Thursday":
         System.out.println("it is weekday"); // print
-        // break;
+        break;
       case "Friday":
         System.out.println("it is weekday"); // print
-        // break;
+        // break; 
       default:
         System.out.println("it is weekend"); // print
     }
+
+//----self test-------
+
+    String month = "Jan";
+    switch (month) {
+      case "Jan":
+      System.out.println("it is 31 days");
+      case "feb":
+      System.out.println("it is 28 days");
+      case "march":
+      System.out.println("it is 31 days");
+      break;
+      case "april":
+      System.out.println("it is 30 days");
+      case "may":
+      System.out.println("it is 31 days");
+      default:
+        System.out.println("it is 31 days");
+    }
+
+
+
+
 
   }
 }
 
 //switch + break
 //switch 似 IF 但用係較小數
+
 
