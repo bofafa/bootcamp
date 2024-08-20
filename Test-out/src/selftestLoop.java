@@ -218,7 +218,22 @@ public class selftestLoop {
      }
    System.out.println(count); //2 
 
-   
+   System.out.println("------------find the max / Min in Arrays------------");
+   //Find Max
+   int[] arr = new int[] { 3, 6, -1,100,4};
+   int max2 = Integer.MIN_VALUE;
+    for (int i = 0; i<arr.length; i++){
+     //if (arr[i] > max) max =arr [i];
+    max2 = Math.max(arr[i], max2);
+    }
+  System.out.println(max2);//100
+
+   //Find min
+    int min = Integer.MAX_VALUE;
+    for (int i =0 ; i<arr.length; i++){
+     min = Math.min(arr[i], min);
+    }
+     System.out.println(min); // -1
  }
  
 }

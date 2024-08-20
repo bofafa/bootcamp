@@ -36,8 +36,17 @@ public class DemoforWhileLoop {
 
 
 
+    int num = 54321;
+    String result ="";
+    while (num > 0) {
+      result += num% 10;; //retrieve, String + int
+      num /= 10; //54321 ->5432->543->54->5
+    }
+    System.out.println(result);// 12345
 
-    System.out.println("-------------while loop check radom numer-----------------");
+
+
+    System.out.println("-------------while loop check random numer-----------------");
     // Random number
     int value = new Random().nextInt(5)+1; // <-----出 number 0-4 random value // + 1 <------ 出number 1-5 
     System.out.println(value);
@@ -78,8 +87,13 @@ public class DemoforWhileLoop {
 
     
 
-
-
+        int num = 54321;
+        String result ="";
+        while (num > 0) {
+          result += num% 10;; //retrieve, String + int
+          num /= 10; //54321 ->5432
+        }
+        System.out.println(result);// 12345
 
   
     }

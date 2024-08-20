@@ -22,7 +22,7 @@ public class DemostaticMethod2 {
 
   } // <----------注意括號，static 需平行，method 不可在 Static 內
 
-  // Method Signature = Mehod Name + Number of Paramters & Type of Parameters
+  // Method Signature = Method Name + Number of Paramters & Type of Parameters
   // you can reuse the method name as they have different methoed signature
   public static int sum(int x, int y) {
     System.out.println("method x + y");
@@ -42,4 +42,6 @@ public class DemostaticMethod2 {
   public static double calculateAreaForSquare(double lenght) {
     return Math.pow(lenght, 2.0);
   }
+
+  
 }

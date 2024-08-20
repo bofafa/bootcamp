@@ -45,8 +45,7 @@ public class JavaQuest10 {
     
      for (int i = backup; i < newArr.length-1; i++){
         newArr [i+1] = my_array[i];
+    
      }
      System.out.println("New Array: " + Arrays.toString(newArr));
-     //System.out.println(indexPosition);
-  }
-}
+    }

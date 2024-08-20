@@ -8,7 +8,7 @@ public class DemoString2Method {
     /// pass by value , pass by reference
     /// method -> 3 type
     /// 1.searching (contains, indexOf, lastIndexOf )
-    //// 2. presentation (length, charAt, IsEmpty, isBlank. substring)
+    //// 2. presentation (length, charAt, isEmpty, isBlank. substring)
     //////3. transform (replace, trim, toLowrCase, toUpperCase)
 
 
@@ -59,6 +59,8 @@ System.out.println("-----------一menthod ; substring -------");
     String s4 = "hello ";
     System.out.println(s4.isEmpty()); // false
     System.out.println(s4.isBlank()); //  false
+
+    System.out.println("-----------一menthod ; toLowerCase to UpperCase ----------------");
 
     String s5 = "Hello";
     System.out.println(s5.toLowerCase()); // hello // but s5 never change, String value never change

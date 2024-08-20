@@ -130,5 +130,6 @@ public class SelfQuestWeek1 {
         // It is a weak password. Length < 12.
     
       }
-    }
+}
+
   

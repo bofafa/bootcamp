@@ -58,5 +58,15 @@ public class Selftest {
               }
             System.out.println(total);
        
+            
+            int maxNum2 =5;
+            for (int i = 1 ; i <maxNum2; i++ ){
+              System.out.println(i);
+              
+             
+              
+            }
+
+
   }
 }
