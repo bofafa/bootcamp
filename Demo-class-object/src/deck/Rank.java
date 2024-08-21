@@ -1,7 +1,13 @@
 package deck;
 
-
 public class Rank {
+  // !!! make sure you understand the difference between them
+  // 1. static final
+  // 2. static
+  // 3. final (belongs to object)
+  // 4. instance variable (non-static, non final)
+
+  // Constant (static final) -> should be public
   public static final char ACE = 'A';
   public static final char TWO = '2';
   public static final char THREE = '3';
@@ -16,10 +22,66 @@ public class Rank {
   public static final char QUEEN = 'Q';
   public static final char KING = 'K';
 
+  // final instance variable
+  // private final String name = "ABC"; // every Rank Object has name attribute
+
   private char value;
 
-  public Rank(char value) {
+  private Rank(char value) {
     this.value = value;
+  }
+
+  // Rank.ofACE
+  public static Rank ofACE() {
+    return new Rank(ACE);
+  }
+
+  public static Rank ofTWO() {
+    return new Rank(TWO);
+  }
+
+  public static Rank ofTHREE() {
+    return new Rank(THREE);
+  }
+
+  public static Rank ofFOUR() {
+    return new Rank(FOUR);
+  }
+
+  public static Rank ofFIVE() {
+    return new Rank(FIVE);
+  }
+
+  public static Rank ofSIX() {
+    return new Rank(SIX);
+  }
+
+  public static Rank ofSEVEN() {
+    return new Rank(SEVEN);
+  }
+
+  public static Rank ofEIGHT() {
+    return new Rank(EIGHT);
+  }
+
+  public static Rank ofNINE() {
+    return new Rank(NINE);
+  }
+
+  public static Rank ofTEN() {
+    return new Rank(TEN);
+  }
+
+  public static Rank ofJACK() {
+    return new Rank(JACK);
+  }
+
+  public static Rank ofQUEEN() {
+    return new Rank(QUEEN);
+  }
+
+  public static Rank ofKING() {
+    return new Rank(KING);
   }
 
   public char getValue() {
@@ -57,6 +119,10 @@ public class Rank {
     }
     return 0;
   }
-}
 
+  public String toString() {
+    return "Rank(" //
+        + "value=" + this.value //
+        + ")";
+  }
 }
