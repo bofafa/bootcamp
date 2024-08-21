@@ -3,14 +3,8 @@ import ClassWork1.Dress;
 public class Demo {
   public static void main(String[] args) {
 
-    //-------------------class work---------------//
-    Dress dress = new Dress();
-    String brand = "AcneStudio";
-    String productNumber = "1234";
-    
-
-    System.err.println(dress.getSku());
-
+  
+  
     //menmory
     int x =3;
     

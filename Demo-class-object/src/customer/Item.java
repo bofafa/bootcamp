@@ -2,26 +2,27 @@ package customer;
 
 import java.math.BigDecimal;
 
-public class Item {
+//1. attributes
+public class Item {                      //<-----attributes  Item 
   private double price;
   private int quantity;
 
   // constructor
-  public Item(double price, int quantity) {
+  public Item(double price, int quantity) { //<------ constructor, item (要有PRICE AND Qty)
     this.price = price;
     this.quantity = quantity;
   }
 
-  // getter, setter
+  // getter, setter                   { //<------ only getting here
   public double getPrice() {
     return this.price;
   }
 
-  public int getQuantity() {
+  public int getQuantity() {          
     return this.quantity;
   }
 
-  // Not a must to use BigDecimal (double * int)
+  // Not a must to use BigDecimal (double * int) <----- 有點數時要用BigDecimal
   public double subtotal() {
     // int * double -> 1.0 * 0.2
     // double * double -> 0.1 * 0.2
