@@ -47,7 +47,7 @@ public class Card {
 
   public String toString() {
     return "Card(" //
-        + "rank=" + this.rank //
+        + "" + this.rank //
         + ", suit=" + this.suit //
         + ")";
   }

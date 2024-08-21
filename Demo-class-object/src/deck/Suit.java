@@ -3,10 +3,10 @@ package deck;
 public class Suit {
   // Constant (static final)
   // Integer.MIN_VALUE -> constant
-  public static final int DIAMOND = 1;
-  public static final int CLUB = 2;
-  public static final int HEART = 3;
-  public static final int SPADE = 4;
+  public static final int DIAMOND = '♦';
+  public static final int CLUB = '♣';
+  public static final int HEART = '♥';
+  public static final int SPADE = '♠';
 
   // static variable
 
@@ -67,9 +67,7 @@ public class Suit {
   }
 
   public String toString() {
-    return "Suit(" //
-        + "value=" + this.value //
-        + ")";
+    return Character.toString( this.value);
   }
 
   public static void main(String[] args) {

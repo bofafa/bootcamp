@@ -121,8 +121,6 @@ public class Rank {
   }
 
   public String toString() {
-    return "Rank(" //
-        + "value=" + this.value //
-        + ")";
+    return this.value + "";
   }
 }
