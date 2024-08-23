@@ -22,7 +22,7 @@ public class DemoStringBuilder {
     // 2. charAt()
     // 3. substring()
     // etc ...
-
+    System.out.println("-----------------currentTimeMillis()-----------------");
     long startTime = System.currentTimeMillis(); // ms
     String s1 = "";
     for (int i = 0; i < 100000; i++) {
@@ -39,5 +39,9 @@ public class DemoStringBuilder {
     }
     afterTime = System.currentTimeMillis(); // ms
     System.out.println(afterTime - startTime); // 3 ms
+
+    System.out.println("-----------------replace----------------");
+
+    
   }
 }

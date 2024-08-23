@@ -13,5 +13,12 @@ public class DemoString {
     Integer i3 = new Integer(13);
     System.out.println(i == i2); // true
     System.out.println(i == i3); // false
+
+
+    Integer n1 = 127;
+    Integer n2 = 128;
+     
+    System.out.println();
+
   }
 }

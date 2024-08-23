@@ -62,8 +62,10 @@ public class DemoBigDecima {
       System.out.println(BigDecimal.valueOf(10).equals(BigDecimal.valueOf(10)));// true
       System.err.println(BigDecimal.valueOf(10L).doubleValue()==BigDecimal.valueOf(10.0).doubleValue());//ture
 
-      System.out.println("-------------use BigDecimal compareTp  ----------");
-
+      System.out.println("-------------use BigDecimal compareTo  ----------");
+      System.out.println(BigDecimal.valueOf(10L).compareTo(BigDecimal.valueOf(10.0))); // 0
+      System.out.println(BigDecimal.valueOf(11).compareTo(BigDecimal.valueOf(10.0))); // 1
+      System.out.println(BigDecimal.valueOf(9).compareTo(BigDecimal.valueOf(10.0))); // -1
     }
 
   }
