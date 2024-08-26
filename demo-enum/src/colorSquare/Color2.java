@@ -1,3 +1,4 @@
+package colorSquare;
 public enum Color2 { //enum is class的進化版
 // enum value 已經係 object
   RED, BLUE; // 2個object 係static final object, 全局唯一 

@@ -31,7 +31,6 @@ public class ModelPhoto {
   }
 
   public String toString(){
-  
   return " " + this.productSKU + " " + this.modelPhoto;
   }
  

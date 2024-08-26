@@ -1,3 +1,4 @@
+package colorSquare;
 import java.math.BigDecimal;
 
 public class Square {

@@ -48,14 +48,20 @@ public class EcommPhoto {
   //}
 
 
-   public boolean isCheckSet (String sku, ProductPhoto product, ModelPhoto model) { // one set of photo
+   public boolean isCheckSet (ProductPhoto productPhoto) { // one set of photo
     if (this.sku !=  sku || this.sku != product.getProductSku() || this.sku != model.getProductSKU()) 
       System.out.println("Sku not matched");
       return false;
+      
+
     }
-
-
-
+   public boolean isCheckSet (ModelPhoto modelPhoto) { // one set of photo
+    if (this.sku !=  sku || this.sku != product.getProductSku() || this.sku != model.getProductSKU()) 
+      System.out.println("Sku not matched");
+      return false;
+      
+      
+    }
 
  
   public String toString() {
@@ -67,11 +73,12 @@ public class EcommPhoto {
 
   public static void main(String[] args) {
     String test = "abc";
-    ProductPhoto productPhoto = new ProductPhoto(test, 3, 2);
-    
-    ModelPhoto modelPhoto = new ModelPhoto(test, 4);
-    EcommPhoto set1 = new EcommPhoto (test, productPhoto, modelPhoto);
+    ProductPhoto productPhoto = new ProductPhoto(test, 1, 2);
+    ModelPhoto modelPhoto = new ModelPhoto(test, 3);
+    EcommPhoto set1 = new EcommPhoto ("abc", productPhoto, modelPhoto);
+    EcommPhoto set2 = new EcommPhoto (test, productPhoto, modelPhoto);
     System.out.println(BrandoftheProduct + set1);
+    System.out.println(BrandoftheProduct + set2);
     
     //EcommPhoto testing = new EcommPhoto();
     //System.out.println(ecommPhotoCount);

@@ -1,3 +1,4 @@
+package colorSquare;
 public class Color {
    
  

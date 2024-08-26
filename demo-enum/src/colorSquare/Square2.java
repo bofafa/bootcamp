@@ -1,3 +1,4 @@
+package colorSquare;
 public class Square2 {
   private double length;
   private Color2 color; //enum
