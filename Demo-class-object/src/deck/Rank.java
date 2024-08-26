@@ -88,6 +88,7 @@ public class Rank {
     return this.value;
   }
 
+
   public int compareTo(Rank rank) {
     // Early return
     if (this.value != rank.getValue()) {

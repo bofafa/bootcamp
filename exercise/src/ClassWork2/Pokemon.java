@@ -11,6 +11,12 @@ public class Pokemon{
     this.HP = HP;
   }
 
+  public String getName(){
+    return this.name;
+
+  }
+  
+
   public String info() {   //<-----instance method
     return "Pokemon ("//
      + "Name =" + this.name//

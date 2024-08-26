@@ -20,13 +20,13 @@ public class Deck {
     // for-each
     // 13 x 4
     int idx = 0;
-    for (Suit suit : suits) { // 4 times
-      for (Rank rank : ranks) { // 13 times
+    for (Suit2 suit : Suit2.values()) { // 4 times
+      for (Rank2 rank : Rank2.values()) { // 13 times
         this.cards[idx++] = new Card(rank, suit);
       }
     }
   }
-
+  
   public Card[] getCards() {
     return this.cards;
   }
