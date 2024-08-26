@@ -15,8 +15,10 @@ public class EcommPhoto {
     this.sku = sku;
     this.product = product;
     this.model = model;
-    
+    ecommPhotoCount++;
   }
+
+  
  
 
 
@@ -38,6 +40,9 @@ public class EcommPhoto {
     this.sku= sku;
    }
    
+   
+    
+
   //public static EcommPhoto photoset (String SKU, ProductPhoto product, ModelPhoto model){
     //return EcommPhoto photoset(SKU, product, model);
   //}
@@ -52,11 +57,9 @@ public class EcommPhoto {
 
 
 
-
-
  
   public String toString() {
-    return "Set (SKU = " + this.sku +
+    return " (SKU = " + this.sku +
            ", Product photo = " + this.product +
            ", Model photo = " + this.model +
            ")";
@@ -64,15 +67,16 @@ public class EcommPhoto {
 
   public static void main(String[] args) {
     String test = "abc";
-    ProductPhoto productPhoto = new ProductPhoto(test, 5, 2);
+    ProductPhoto productPhoto = new ProductPhoto(test, 3, 2);
     
     ModelPhoto modelPhoto = new ModelPhoto(test, 4);
     EcommPhoto set1 = new EcommPhoto (test, productPhoto, modelPhoto);
-    System.out.println(set1);
+    System.out.println(BrandoftheProduct + set1);
     
+    //EcommPhoto testing = new EcommPhoto();
+    //System.out.println(ecommPhotoCount);
     
-    
-    System.out.println("Total EcommPhotos created: " + ecommPhotoCount);
+    System.out.println("Total EcommPhotos folder created: " + ecommPhotoCount);
   }
   
   }

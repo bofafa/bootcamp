@@ -1,4 +1,3 @@
-package workspace.Exercise.src;
 
 import java.util.Scanner;
 

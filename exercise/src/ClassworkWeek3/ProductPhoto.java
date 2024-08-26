@@ -7,7 +7,9 @@ public class ProductPhoto {
   private int detailPhoto;
 
   public ProductPhoto(String productSKU, int productPhoto, int detailPhoto){
-
+  this.productSKU = productSKU;
+  this.productPhoto = productPhoto;
+  this.detailPhoto = detailPhoto;
   }
 
   
@@ -35,15 +37,17 @@ public class ProductPhoto {
   }
 
   public String toString(){
-    return "this is " + this.productPhoto + this.detailPhoto;
+// int total = this.productPhoto + this.detailPhoto;
+    return this.productSKU + " "+ this.totalproductphoto()+"" ;
   }
+
 
   public int totalproductphoto(){
      if(this.productPhoto + this.detailPhoto <5){
       System.out.println("product photos must have more than 5 photos.");
        return this.productPhoto + this.detailPhoto;
      }else{
-       return this.productPhoto + this.detailPhoto;
+       return  this.productPhoto + this.detailPhoto;
 
   }
 }

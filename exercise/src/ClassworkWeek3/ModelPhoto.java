@@ -7,6 +7,9 @@ public class ModelPhoto {
   
 
   public ModelPhoto (String productSKU, int modelPhoto){
+    this.productSKU = productSKU;
+    this.modelPhoto= modelPhoto;
+
   
   }
 
@@ -29,7 +32,7 @@ public class ModelPhoto {
 
   public String toString(){
   
-  return "Model Photo " + this.productSKU + this.modelPhoto;
+  return " " + this.productSKU + " " + this.modelPhoto;
   }
  
 
