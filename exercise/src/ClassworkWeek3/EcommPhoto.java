@@ -23,6 +23,15 @@ public class EcommPhoto {
 
 
   //getter
+
+  public String getSKU(){
+    return this.sku;
+   }
+
+   public void setSKU(){
+    this.sku= sku;
+   }
+   
   public ProductPhoto getProduct(){
     return this.product;
   }
@@ -32,13 +41,6 @@ public class EcommPhoto {
 
   }
 
-   public String getSKU(){
-    return this.sku;
-   }
-
-   public void setSKU(){
-    this.sku= sku;
-   }
    
    
     

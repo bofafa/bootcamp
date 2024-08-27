@@ -1,9 +1,12 @@
 public enum Weekday {
-  MON, TUE, WED, THU, FRI;
+  MON, TUE, WED, THU, FRI,;
 
   public static void main(String[] args) {
-    Weekday [] weekdays = new Weekday[] {  MON, TUE, WED, MON};
-     for (weekday)
+    Weekday[] weekdays = new Weekday[] {MON, FRI, WED, MON};
+    for (Weekday weekday : weekdays) {
+      if (weekday == MON) { // "==" checking address
+        // do something on Monday
+      }
+    }
   }
-  
 }
