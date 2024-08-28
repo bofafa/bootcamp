@@ -6,21 +6,21 @@ public class FashionSku extends CreateSku{ //<if this is error,
   private double itemCode;
  // private double yearCode;
 
+
   public FashionSku (BrandCode brandCode, CategorieCode categorieCode, //
   double itemCode, ColorCode colorCode){
     super(); //<-- call parents method
     this.itemCode = itemCode;
-    //this.yearCode = yearCode;
+    //this.yearCode = yearCode;g
   }
 
   
-  
-@Override
 
- }
-// public double newItemCode(){
-//  return itemCode + 1;
-// }
+  
+  @Override
+  public String toString() {
+    return "Staff2(" //
+        +  super.getBrandCode() + super.getCategorieCode() + 
 
   public static void main(String[] args) {
     FashionSku sku1 = new FashionSku(BrandCode.AMI, CategorieCode.DS, 2000, ColorCode.BLU);

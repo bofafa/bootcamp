@@ -24,7 +24,8 @@ public abstract class Shape {
   // 2. cannot create object for Abstract Class
   // 3. Abstract class can still hold its own attributes
   // 4. The constructor in abstract class is for child class to call
-  public abstract double area();
+  // 5. byt defult all abstract metho must be public
+  abstract double area();
 
   public static void main(String[] args) {
     // Shape shape = new Shape();
