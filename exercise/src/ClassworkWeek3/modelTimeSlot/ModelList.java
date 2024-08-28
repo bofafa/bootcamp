@@ -1,4 +1,4 @@
-package ClassworkWeek3;
+package ClassworkWeek3.modelTimeSlot;
 
 public enum ModelList{
   ALEX ('F' , 175, "jp", "ca"), //<--- String meaning look at enum Brand
@@ -12,17 +12,14 @@ public enum ModelList{
   private int hight;
   private String matchStyle;
   private String matchStyle2;
-private Brand brand ;
 
   private ModelList (char gender, int hight, String matchStyle, String matchStyle2){
     this.gender = gender;
     this.hight = hight;
     this.matchStyle = matchStyle;
     this.matchStyle2 = matchStyle2;
-    this.brand=brand;
-
-
   }
+
   public char getGender() {
     return this.gender;
   }

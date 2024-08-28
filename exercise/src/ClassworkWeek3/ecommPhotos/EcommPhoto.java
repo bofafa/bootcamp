@@ -1,5 +1,4 @@
-package ClassworkWeek3;
-
+package ClassworkWeek3.ecommPhotos;
 
 public class EcommPhoto {
   private static String BrandoftheProduct = "Acne Studio";

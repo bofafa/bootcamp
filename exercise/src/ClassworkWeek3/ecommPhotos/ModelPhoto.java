@@ -1,4 +1,4 @@
-package ClassworkWeek3;
+package ClassworkWeek3.ecommPhotos;
 
 public class ModelPhoto {
 

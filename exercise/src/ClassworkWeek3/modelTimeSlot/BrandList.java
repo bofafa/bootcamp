@@ -1,6 +1,6 @@
-package ClassworkWeek3;
+package ClassworkWeek3.modelTimeSlot;
 
-public enum Brand { //
+public enum BrandList { //
   APC ("cc", "ca") ,//cc= clean cut, ca = casaul
   AMI ("cc", "hi"), //hi = high fashion
   CDG ("jp", "hi"), //jp = Japan
@@ -12,7 +12,7 @@ public enum Brand { //
 private String style;
 private String style2; 
 
-private Brand (String style, String style2){
+private BrandList (String style, String style2){
   this.style = style;
   this.style2 = style2;
 }
@@ -26,4 +26,13 @@ public String getStyles2(){
 }
  
 }
- 
+ //public abstract class CreateSku{
+//   // private String brandCode;
+//   private String categorieCode;
+//   private String itemCode;
+//   private String colorCode;
+//   private String sizeCode;
+
+// public CreateSku (){
+
+// }
