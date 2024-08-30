@@ -1,7 +1,5 @@
 package deck;
 
-import java.util.Arrays;
-
 public class RuleManager {
 
   public boolean isPair(Card card1, Card card2) {
@@ -18,10 +16,9 @@ public class RuleManager {
   }
 
   public static void main(String[] args) {
-
-  
     RuleManager ruleManager = new RuleManager();
-    boolean result = ruleManager.isPair(Card.valueOf(Rank2.ACE ,Suit2.CLUB) , Card.valueOf(Rank2.FOUR , Suit2.HEART));
+    boolean result = ruleManager.isPair(Card.of(PokerRank.ofACE(), Suit2.DIAMOND) //
+        , Card.of(PokerRank.ofACE(), Suit2.CLUB));
 
     System.out.println(result);
   }

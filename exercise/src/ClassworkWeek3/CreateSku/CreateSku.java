@@ -1,16 +1,16 @@
 package ClassworkWeek3.CreateSku;
 
 public abstract class CreateSku{
-  private BrandCode brandCode;
+   private BrandCode brandCode;
    private CategorieCode categorieCode;
-   private String itemCode;
+// private String itemCode;
    private  ColorCode colorCode;
-    //private String sizeCode;
-
+ //private String sizeCode; //sfds 
+    
   public CreateSku (){
  };
 
- public CreateSku (BrandCode brandCode){
+ public CreateSku (BrandCode brandCode){ 
   this.brandCode = brandCode;
  }
   public BrandCode getBrandCode(){
@@ -32,8 +32,16 @@ public CreateSku( ColorCode colorCode){
      return this.colorCode;
   }
 
+  public String toString() {
+  return "FashionSKU(" //
+  +  brandCode  //
+  + categorieCode //
+  + colorCode //
+  + ")";
+}
 
-  public int itemCode;
+
+  //public int itemCode;
   
 public abstract double newItemCode();// method for all child class
 

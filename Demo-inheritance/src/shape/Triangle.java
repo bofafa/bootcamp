@@ -34,8 +34,5 @@ public class Triangle extends Shape {
 
     Triangle t2 = new Triangle(3.0, 4.0, Color.RED);
     System.out.println(t2.getColor()); // RED
-
-    System.out.println(t2); // RED
-
   }
 }

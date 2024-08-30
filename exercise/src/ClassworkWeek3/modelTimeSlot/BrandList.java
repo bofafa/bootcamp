@@ -1,7 +1,7 @@
 package ClassworkWeek3.modelTimeSlot;
 
 public enum BrandList { //
-  APC ("cc", "ca") ,//cc= clean cut, ca = casaul
+  APC ("cc", "")ca ,//cc= clean cut, ca = casaul
   AMI ("cc", "hi"), //hi = high fashion
   CDG ("jp", "hi"), //jp = Japan
   MIHARA("jp", "st"), //st = street wear

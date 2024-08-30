@@ -1,28 +1,25 @@
-
 package deck;
 
-// enum
 public class Card {
   // !!! Make you know the difference between instance variable, static
   // variable, static final variable
 
   // String -> good presentation, built-in equals() & compareTo()
   // "01", "02", "09, "10", "JACK", "QUEEN", "KING"
-  private Rank2 rank; // 1, 2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K
+  private Rank rank; // 1, 2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K
   private Suit2 suit; // DIAMOND, CLUB, HEART, SPADE
 
-  public Card(Rank2 rank, Suit2 suit) {
+  public Card(Rank rank, Suit2 suit) {
     this.rank = rank;
     this.suit = suit;
   }
 
-  // Card c4 = new Card(Rank2.JACK, Suit2.DIAMOND);
-  public static Card valueOf (Rank2 rank, Suit2 suit){
-    return new Card (rank, suit);
+  public static Card of(Rank rank, Suit2 suit) {
+    return new Card(rank, suit);
   }
 
   // getters
-  public Rank2 getRank() {
+  public Rank getRank() {
     return this.rank;
   }
 
@@ -30,9 +27,9 @@ public class Card {
     return this.suit;
   }
 
-  public boolean eqauls(Card card) {
-    // this vs card
-    return this.rank == card.getRank() && this.suit == card.getSuit();
+  public boolean equals(Card card) {
+    return this.rank.equals(card.getRank()) //
+        && this.suit == card.getSuit();
   }
 
   // instance method
@@ -42,32 +39,31 @@ public class Card {
   public int compareTo(Card card) {
     // fixed rules
     // this (address) vs card (address)
-    int rankResult = this.rank.compare(card.getRank());
+    int rankResult = this.rank.compareTo(card.getRank()); // Run-time Polymorphism
     if (rankResult == 0) {
       if (this.suit.compare(card.getSuit()) == 0) { // !!! should use compare()
         return 0;
       } else if (this.suit.compare(card.getSuit()) > 0) { // !!! should use compare()
         return 1;
-      } else {
-        return -1; // base else
       }
+      return -1; // base case
     }
     return rankResult;
   }
 
   public String toString() {
     return "Card(" //
-        + "" + this.rank //
+        + "rank=" + this.rank //
         + ", suit=" + this.suit //
         + ")";
   }
 
   public static void main(String[] args) {
     // valueOf(''),
-    Card c1 = new Card(Rank2.ACE, Suit2.DIAMOND);
-    Card c2 = new Card(Rank2.ACE, Suit2.CLUB);
-    Card c3 = new Card(Rank2.JACK, Suit2.DIAMOND);
-    Card c4 = new Card(Rank2.JACK, Suit2.DIAMOND);
+    Card c1 = new Card(PokerRank.ofACE(), Suit2.DIAMOND);
+    Card c2 = new Card(PokerRank.ofACE(), Suit2.CLUB);
+    Card c3 = new Card(PokerRank.ofJACK(), Suit2.DIAMOND);
+    Card c4 = new Card(PokerRank.ofJACK(), Suit2.DIAMOND);
 
     System.out.println(c2.compareTo(c1)); // 1
     System.out.println(c1.compareTo(c2)); // -1

@@ -1,4 +1,6 @@
+import Animal.Cat;
 import ClassWork1.Dress;
+import Company.Staff;
 
 public class Demo {
   public static void main(String[] args) {

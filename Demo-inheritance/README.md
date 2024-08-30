@@ -27,3 +27,15 @@
 - if you do not overwrite the above 3 method, your class by default inherit Parent's one
   - by defult, all class has a super Parent "Object.class"
   - "Object.class" make use of "Object address" to perform the above 3 methods.
+
+- Polymorphism
+   - Compile time
+    - the scope of the "reference"is determined by the type of reference
+    - when you re-assign the object to a lower level reference, the object behavior maybe different.
+- Run time   
+     -methoed implementation belongs to object itself (but not the reference type) 
+     
+     ##Why do we need Inheritance + Polymorphism?
+
+abstract class type can be used in method parameter (i.e. Shape[] -> area)
+abstract class type can be an attribute of a class (i.e. Rank is an attribute of Card)

@@ -1,5 +1,6 @@
-
+package Animal;
 // keyword: extends
+
 public class Cat extends Animal {
   private String color;
 
@@ -12,12 +13,15 @@ public class Cat extends Animal {
     this.color = color;
   }
 
+  // implicitly call super()
   public Cat(String color) {
+    super(); // call parant empty constructor
     this.color = color;
   }
 
+  // implicitly call super()
   public Cat() {
-
+    super(); // call parant empty constructor
   }
 
   public String getColor() {
@@ -33,6 +37,15 @@ public class Cat extends Animal {
   // public void eat() {
   //   System.out.println("Cat is eating ...");
   // }
+
+  public void run() {
+    this.eat();
+  }
+
+  @Override
+  public void walk() {
+    System.out.println("Cat is walking ...");
+  }
 
   public String toString() {
     return "Cat(" //
@@ -67,7 +80,18 @@ public class Cat extends Animal {
 
     // if there is NO eat() method in Cat.class
     cat3.eat(); // Animal is eating ...
+    cat3.run(); // Animal is eating ...
 
+    // Polymorphism
+    Animal cat4 = new Cat();
+    // cat4.run();
+
+    // Cat is walking ...
+    cat4.walk(); // OK, which walk() method is calling? Animal.walk() or Cat.walk()
+
+    // Animal is walking ...
+    Animal dog = new Dog();
+    dog.walk(); // alias -> Animal.walk()
 
   }
 }

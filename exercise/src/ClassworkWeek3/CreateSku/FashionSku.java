@@ -1,5 +1,7 @@
 package ClassworkWeek3.CreateSku;
 
+import java.util.Objects;
+
 public class FashionSku extends CreateSku{ //<if this is error, 
   //because haven't override the method
 
@@ -8,26 +10,62 @@ public class FashionSku extends CreateSku{ //<if this is error,
 
 
   public FashionSku (BrandCode brandCode, CategorieCode categorieCode, //
-  double itemCode, ColorCode colorCode){
+  double itemCode, ColorCode colorCode){ //<---brandcode, categoriecode
     super(); //<-- call parents method
     this.itemCode = itemCode;
-    //this.yearCode = yearCode;g
-  }
+   }
+  
 
   
+ public double getItemCode() { //<----- parent calss method and input getter
+   return itemCode;
+ }
+
+ 
+
+  @Override
+  public double newItemCode() {
+  return itemCode +1;
+    // TODO Auto-generated method stub
+    //throw new UnsupportedOperationException("Unimplemented method 'newItemCode'");
+  }
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (!(obj instanceof FashionSku))
+      return false;
+      FashionSku fashionSku = (FashionSku) obj;
+    return Objects.equals(super.getBrandCode(), fashionSku.getBrandCode())
+        && Objects.equals(this.itemCode, fashionSku.getItemCode())
+        && Objects.equals(super.getCategorieCode(), fashionSku.getCategorieCode())
+        && Objects.deepEquals(super.getColorCode(), fashionSku.getColorCode());
+  }
+ 
+  @Override
+  public int hashCode() {
+    return Objects.hash(super.getBrandCode(), super.getCategorieCode(),//
+    super.getColorCode(), this.itemCode);
+  }
 
   
   @Override
   public String toString() {
-    return "Staff2(" //
-        +  super.getBrandCode() + super.getCategorieCode() + 
+    return "FashionSKU(" //
+        +  super.getBrandCode() + super.getCategorieCode() + //
+        + this.itemCode + super.getColorCode() + ")";
+  }
 
   public static void main(String[] args) {
     FashionSku sku1 = new FashionSku(BrandCode.AMI, CategorieCode.DS, 2000, ColorCode.BLU);
     System.out.println(sku1.newItemCode());
-    System.out.println(sku1.newItemCode(), BrandCode.AMI);
+
   
-    System.out.println(sku1);
+    System.out.println("Fashion SKU" + sku1);
   }
 
+
+
+  
 }
+

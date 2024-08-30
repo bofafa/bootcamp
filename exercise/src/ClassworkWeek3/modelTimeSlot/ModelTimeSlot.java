@@ -7,9 +7,9 @@ import java.time.LocalTime;
 
 public class ModelTimeSlot {
   // match the model with the brand
-  // shoot 15 SKU need 60 mins------ Done!!!!!! :D yay ya ya 
+  // shoot 15 SKU need 60 mins------ Done!!!!!! :D yay ya ya
   // plan the time slot with Date of the week (time?? mo teaching about it yet)
-  // --- DONE!! :D yay yay yay 
+  // --- DONE!! :D yay yay yay
 
   private BrandList brand;
   private ModelList model;
@@ -37,7 +37,7 @@ public class ModelTimeSlot {
     return this.productQty;
   }
 
-  public void setProductQty(double input) { //----- input can be rename
+  public void setProductQty(double input) { // ----- input can be rename
     this.productQty = input;
 
   }
@@ -110,14 +110,25 @@ public class ModelTimeSlot {
   // }
   // }
 
+  // check enum model match with product??
+  public static String isModelMatch() {
+    StringBuilder sb = new StringBuilder();
+    for (BrandList b : BrandList.values()) {
+      for (ModelList m : ModelList.values()) {
+        if (b.getStyles2().equals(m.getMatchStyle2())) {
+          sb.append(b).append(" match ").append(m).append(".");
+          break;
+        }
+      }
+    }
+    return sb.toString();
+  }
+
   public static void main(String[] args) {
 
     ModelTimeSlot model1 = new ModelTimeSlot(BrandList.APC, ModelList.ALEX, 40);
 
-    System.out.println(model1.timeNeed()); //<---- qty 40 /  15 = how many hours
-     
-  
-
+    System.out.println(model1.timeNeed()); // <---- qty 40 / 15 = how many hours
 
     System.out.println("Check : ");
     model1.checkBookingTime(LocalDate.of(2024, 8, 27)); // <-- call method
@@ -131,6 +142,7 @@ public class ModelTimeSlot {
     // photo shoot 6 days after prodcut shoot
     // System.out.println(shootingDate.plusDays(6));
 
+    System.out.println(" TEST model 1 : " + isModelMatch());
     // if (shootingDate.plusDays(6).getDayOfWeek() == DayOfWeek.of(7) || //
     // shootingDate.plusDays(6).getDayOfWeek() == DayOfWeek.of(7)) {
     // System.out.println("This is weekend, reschedule model booking");
