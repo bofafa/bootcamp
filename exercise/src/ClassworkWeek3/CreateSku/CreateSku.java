@@ -1,4 +1,3 @@
-package ClassworkWeek3.CreateSku;
 
 public abstract class CreateSku{
    private BrandCode brandCode;
@@ -13,6 +12,13 @@ public abstract class CreateSku{
  public CreateSku (BrandCode brandCode){ 
   this.brandCode = brandCode;
  }
+
+
+ public CreateSku (BrandCode brandCode,ColorCode colorCode){ 
+  this.colorCode=colorCode;
+  this.brandCode = brandCode;
+ }
+
   public BrandCode getBrandCode(){
     return this.brandCode;
   }

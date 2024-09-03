@@ -1,3 +1,4 @@
+package loop;
 import java.util.Arrays;
 
 public class selftestLoop {
@@ -127,7 +128,7 @@ public class selftestLoop {
     int[] arr2 = new int[3];
     max = Integer.MIN_VALUE; // -2.1b ==== tools
     for (int i = 0; i < arr2.length; i++) {
-      if (arr2[1] > max) {
+      if (arr2[i] > max) {
         max = arr2[i];
 
       }

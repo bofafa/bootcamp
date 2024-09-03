@@ -1,5 +1,6 @@
 package ClassworkWeek3.CreateSku;
 
+
 public enum CategorieCode {
   TP ("top"),
   SK ("skirt"),

@@ -1,4 +1,4 @@
-package ClassworkWeek3.CreateSku;
+
 
 public enum ColorCode {
   WHT,

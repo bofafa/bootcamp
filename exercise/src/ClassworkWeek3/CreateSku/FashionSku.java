@@ -1,5 +1,5 @@
-package ClassworkWeek3.CreateSku;
 
+package classwork - oop;
 import java.util.Objects;
 
 public class FashionSku extends CreateSku{ //<if this is error, 

@@ -2,23 +2,26 @@ package ClassworkWeek3.CreateSku;
 
 import java.util.Objects;
 
-import shape.Color;
-
 public class HomewearSku extends CreateSku{
 
 
   private double itemCode;
 
-  public HomewearSku (BrandCode brandCode, double itemCode, Color ColorCode){
-  super();
+  public HomewearSku (BrandCode brandCode, double itemCode, ColorCode ColorCode){
+  // super.getCategorieCode();
+  // super.getColorCode();
+  super(brandCode , colorCode); 
   this.itemCode = itemCode;
 }
+
 
    public double getItemCode(){
     return itemCode;
    }
 
+   
     double stocklist = 4512; //<-----hard code 
+
     
 
    @Override
@@ -55,7 +58,7 @@ public class HomewearSku extends CreateSku{
    }
 
    public static void main(String[] args) {
-    HomewearSku sku1 = new HomewearSku(BrandCode.STO, 3456 , Color.RED);
+    HomewearSku sku1 = new HomewearSku(BrandCode.STO, 3456 , ColorCode.RED);
     System.out.println("Homewear SKU =" + sku1);
   }
     }

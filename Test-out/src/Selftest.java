@@ -20,17 +20,7 @@ public class Selftest {
 
 
 
-        // Example 5
-        int num = 7;
-        // Sample ouput:
-        // 7 is an odd number.
-        // 8 is an even number.
-        if (num % 2 == 0) {
-          System.out.println(num + "is an even number");
-          }else{ 
-          System.out.println(num + "is an odd number"); }
       
-
 
  System.out.println("--------------for loop ; ok understand ---------------");
  /// about loop////
@@ -52,11 +42,11 @@ public class Selftest {
 
               System.out.println("------------- For loop 總和-------------");
               // 1＋2＋3＋4＋5
-               int total = 0;
+               int sum = 0;
               for (int i = 1 ; i <= 5 ; i++){
-              total = total + i;
+              sum += i; 
               }
-            System.out.println(total);
+            System.out.println(sum); //15 
        
             
             int maxNum2 =5;
