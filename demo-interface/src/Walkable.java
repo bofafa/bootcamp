@@ -33,7 +33,7 @@ public interface Walkable {
     System.out.println(Walkable.x); // 24
 
     // How to call sum()
-    System.out.println(new Person().sum(3, 2)); // 5
+    System.out.println(new Person1().sum(3, 2)); // 5
 
     System.out.println(Walkable.subtract(3, 2)); // 1
 

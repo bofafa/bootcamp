@@ -16,7 +16,7 @@ public class DemoCharSequence {
     s2.length();
     s2.isEmpty();
 
-    Swimable person = new Person();
+    Swimable person = new Person1();
     person.swim();
     // person.walk();
 

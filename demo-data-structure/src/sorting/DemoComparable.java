@@ -49,7 +49,11 @@ Collections.sort(sballs);
 
 System.out.println(sballs);
 
-
+// can put the sball in aslist, no need new arraylist, but its for read only, cant not write, such as .add or .remove
+//asList is an object, can not call Arraylist method, arraylist is interface
+// 
+//List <Sball> balls = Array.asList(new SBall(Color.RED, Name.ALEX), new SBall(Color.RED, Name.BENNY),
+// new SBall (Color.YELLOW, )...................... 
 
 }
 

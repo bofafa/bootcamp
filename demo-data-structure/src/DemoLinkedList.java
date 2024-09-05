@@ -22,5 +22,13 @@ public class DemoLinkedList {
         return i;
     }
     return -1;
+
+
   }
+  // total time complexity: 0(n) + 0(1) -> 0(n)
+   public static List<String> get(int[]arr){
+   //Time Complexity -0(n) 
+   }
+
+
 }

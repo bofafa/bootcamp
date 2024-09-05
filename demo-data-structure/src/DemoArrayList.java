@@ -238,6 +238,7 @@ public class DemoArrayList {
     arrayList4.add("hello");
     System.out.println(arrayList4); // [abc, def, ijk, hello]
 
+    String 
 
   }
 }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 
-public class DemoHashSet {
+public class DemoHashset {
   public static void main(String[] args) {
     // Collection.class -> Basic operation of collection
     Collection<String> strings = new ArrayList<>();
