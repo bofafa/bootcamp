@@ -22,13 +22,23 @@ public class DemoLinkedList {
         return i;
     }
     return -1;
-
-
   }
-  // total time complexity: 0(n) + 0(1) -> 0(n)
-   public static List<String> get(int[]arr){
-   //Time Complexity -0(n) 
-   }
 
+  // Total Time Complexity: O(n^2) + O(n) + O(1) -> O(n^2)
+  public static List<String> get(int[] arr) {
+    // Time Complexity -> O(n)
+    // O(n^2)
+    for (int i = 0; i < arr.length; i++) { // iteration n times
+      for (int j = 0; j < arr.length; j++) {
+      }
+    }
+    // O(n)
+    for (int i = 0; i < arr.length; i++) {
 
+    }
+    // O(1)
+    if (arr.length > 10)
+      return null;
+    return null;
+  }
 }

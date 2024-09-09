@@ -1,4 +1,3 @@
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -75,7 +74,8 @@ public class DemoHashMap {
     }
     System.out.println("Sum of all Person's age=" + sum);
 
-    // entrySet(), keySet(), values() -> For Loop
+    // 3 ways to do For Loop in Map
+    // entrySet(), keySet(), values()
 
     System.out.println(personMap.size()); // 2
     personMap.clear();
@@ -102,7 +102,5 @@ public class DemoHashMap {
 
     // Object.class -> new HKID("1234") != new HKID("1234")
     // HKID.class -> After Override, new HKID("1234") == new HKID("1234")
-
-
   }
 }

@@ -1,8 +1,8 @@
 // public final class Person implements Walkable, Swimable {
 // if the class is "final", it cannot be extended by subclass.
-public class Person implements Walkable, Swimable {
+public class Person1 implements Walkable, Swimable {
 
-  public Person(String string, int i) {
+  public Person1(String string, int i) {
     //TODO Auto-generated constructor stub
   }
 

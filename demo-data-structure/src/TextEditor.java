@@ -14,21 +14,27 @@ public class TextEditor {
   }
 
   public void append(String newText) {
-    this.undoStack.push(this.text); 
+    this.undoStack.push(this.text);
     this.text += newText;
+    // 
   }
 
   public void undo() {
-    if(this.undoStack.isEmpty()){
-      System.out.println("you can not undo");
+    if (!this.undoStack.isEmpty()) {
       this.redoStack.push(this.text);
+      this.text = this.undoStack.pop();
+    } else {
+      System.out.println("No action to undo!");
     }
-    }
-
+  }
 
   public void redo() {
-    this.undoStack.push(this.text);
-    this.text= redoStack.pop();
+    if (!this.redoStack.isEmpty()) {
+      this.undoStack.push(this.text);
+      this.text = redoStack.pop();
+    } else {
+      System.out.println("No action to redo!");
+    }
   }
 
   @Override
@@ -38,16 +44,24 @@ public class TextEditor {
 
   public static void main(String[] args) {
     TextEditor editor = new TextEditor();
-    editor.append("Hello");  // undoStack: "", this.text = Hello
+    editor.append("Hello"); // undoStack: "", this.text = Hello
     editor.append(" World"); // undoStack: "Hello", "", this.text = Hello World
-    editor.append("!"); // undoStack: "Hello World", "Hello"  this.text = Hello World!
-    
+    editor.append("!"); // undoStack: "Hello World", "Hello" this.text = Hello
+                        // World!
+    System.out.println(editor); // Hello World!
+    editor.undo();
+    editor.undo();
+    editor.undo();
+    editor.undo();
+    System.out.println(editor); // Hello
+    editor.redo();
+    editor.redo();
+    editor.redo();
+    editor.redo();
+    System.out.println(editor); // Hello World!
 
-    editor.undo();
-    editor.undo();
-    editor.undo();
-    
-    System.out.println(editor);
+    TextEditor editor2 = new TextEditor();
+    editor2.redo();
   }
 
 }
