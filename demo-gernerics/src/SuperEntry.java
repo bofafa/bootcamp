@@ -7,15 +7,15 @@ public class SuperEntry<K, V> {
     this.value = value;
   }
 
-  public K getKey(){
+  public K getKey() {
     return this.key;
   }
 
-  public V getValue(){
+  public V getValue() {
     return this.value;
   }
 
-  public void setValue(V value){
+  public void setValue(V value) {
     this.value = value;
   }
 }

@@ -14,3 +14,4 @@
   - 寫少喲class
   - T ---> integer or String
 
+## extends & super in Generics -> refer to shape example
