@@ -19,4 +19,9 @@ public class Person {
   public boolean isAdult() {
     return this.age >= 18;
   }
+
+  public static void main(String[] args) {
+    
+    
+  }
 }

@@ -1,5 +1,6 @@
 package com.bootcamp.junit;
 
+
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 // static import
 import static org.junit.jupiter.api.Assertions.assertFalse;

@@ -1,3 +1,5 @@
+package uncheckedexception;
+
 public class StringIndexOutOfBound {
   public static void main(String[] args) {
     // char[]
@@ -8,6 +10,6 @@ public class StringIndexOutOfBound {
     } catch (StringIndexOutOfBoundsException e) {
       System.out.println("idx is out of bound.");
     }
-    
+
   }
 }
